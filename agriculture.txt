@@ -1,0 +1,244 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Feb 14, 2023 at 06:32 AM
+-- Server version: 5.0.45
+-- PHP Version: 5.2.5
+-- 
+-- dd
+-- 
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Database: `onlineagri`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `apply`
+-- 
+
+CREATE TABLE `apply` (
+  `id` int(11) NOT NULL auto_increment,
+  `sid` int(11) NOT NULL,
+  `sname` varchar(1000) NOT NULL,
+  `edate` varchar(1000) NOT NULL,
+  `amt` varchar(1000) NOT NULL,
+  `edesc` varchar(1000) NOT NULL,
+  `uname` varchar(1000) NOT NULL,
+  `address` varchar(1000) NOT NULL,
+  `phine` varchar(1000) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+-- 
+-- Dumping data for table `apply`
+-- 
+
+INSERT INTO `apply` (`id`, `sid`, `sname`, `edate`, `amt`, `edesc`, `uname`, `address`, `phine`) VALUES 
+(1, 1, 'sammba sakupadi', '13-02-23', '15000', 'Patta,Adcard,voterid,2photo,date:1-4-2023', 'reva', 'Trichy', '9856514514'),
+(2, 1, 'sammba sakupadi', '14-02-23', '15000', 'Patta,Adcard,voterid,2photo,date:1-4-2023', 'reva', 'trichy', '888888');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `product`
+-- 
+
+CREATE TABLE `product` (
+  `id` varchar(100) NOT NULL,
+  `proname` varchar(100) NOT NULL,
+  `price` varchar(100) NOT NULL,
+  `prod` varchar(100) NOT NULL,
+  `protype` varchar(100) NOT NULL,
+  `img` varchar(100) NOT NULL,
+  `uname` varchar(100) NOT NULL,
+  `qty` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `product`
+-- 
+
+INSERT INTO `product` (`id`, `proname`, `price`, `prod`, `protype`, `img`, `uname`, `qty`) VALUES 
+('2', 'orange', '450', 'orange', 'fruits', 'orange.jpg', 'ganesh', '0'),
+('3', 'grphs', '500', 'Black Graphs', 'fruits', 'graphs.jpg', 'ganesh', '5000'),
+('4', 'Apple', '150', 'Red apple', 'fruits', 'apple.jpg', 'ram', '1000'),
+('5', 'Orange', '150', 'Kamala orange', 'fruits', 'orange.jpg', 'ram', '0'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf'),
+('6', 'sdasdf', 'sdfsdf', 'sdfsdf', 'Plants', 'Koala.jpg', 'reva', 'sdfsdf');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `register`
+-- 
+
+CREATE TABLE `register` (
+  `fid` varchar(100) NOT NULL,
+  `fname` varchar(100) NOT NULL,
+  `gender` varchar(100) NOT NULL,
+  `age` int(100) NOT NULL,
+  `add` varchar(100) NOT NULL,
+  `ph` varchar(100) NOT NULL,
+  `uname` varchar(100) NOT NULL,
+  `pass` varchar(100) NOT NULL,
+  `etype` varchar(100) NOT NULL,
+  `img` varchar(1000) NOT NULL,
+  `img1` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `register`
+-- 
+
+INSERT INTO `register` (`fid`, `fname`, `gender`, `age`, `add`, `ph`, `uname`, `pass`, `etype`, `img`, `img1`) VALUES 
+('1', 'ganesh', 'Male', 0, '12,Anna Nagar,Trichy', '9856235689', 'ganesh', '123', 'Seller', '', ''),
+('2', 'bav', 'Female', 34, 'Trichy', '07845124578', 'bav', '123', 'Buyer', '', ''),
+('6', 'Revathy', 'Female', 13, '12,Anna Nagar\r\nTrichy', '', 'reva', '123', 'Seller', '', ''),
+('7', 'aaaaaa', 'Male', 23, 'sadasd', '', 'aaa', 'aa', 'Seller', '', ''),
+('8', 'aaaaaa', 'Male', 23, 'sadasd', '', 'aaa', '123', 'Seller', '', ''),
+('9', 'Revathy', 'Female', 34, '12,Anna Nagar\r\nTrichy', '', 'reva', '123', 'Seller', '', ''),
+('9', 'Revathy', 'Female', 34, '12,Anna Nagar\r\nTrichy', '', 'reva', '123', 'Seller', '', ''),
+('9', 'Revathy', 'Female', 34, '12,Anna Nagar\r\nTrichy', '', 'reva', '123', 'Seller', '', ''),
+('10', 'Revathy', 'Female', 34, '12,Anna Nagar\r\nTrichy', '', 'reva', '123', 'Seller', '', 'Chrysanthemum_0.bmp'),
+('10', 'Revathy', 'Female', 34, '12,Anna Nagar\r\nTrichy', '', 'reva', '123', 'Seller', '', 'Chrysanthemum_0.bmp'),
+('10', 'revathy reeva', 'Female', 343, 'Trichy', '', 'revathy', '123', 'Seller', '5.jpg', '4.jpg'),
+('10', 'ram', 'Male', 25, '12,Anna Nagar', '', 'ram', '123', 'Seller', 'adcard.jfif', '12.jpg'),
+('10', 'karthick', 'Male', 22, 'Trichy', '', 'karthick', '123', 'Buyer', '', '12.jpg'),
+('10', 'asdasd', 'Male', 34, 'zsdfsdf', '', 'reva', '123', 'Seller', 'Jellyfish.jpg', '1.png'),
+('10', 'asdasd', 'Male', 34, 'zsdfsdf', '', 'reva', '123', 'Seller', 'Jellyfish.jpg', '1.png'),
+('10', 'asdasd', 'Male', 34, 'zsdfsdf', '', 'reva', '123', 'Seller', 'Jellyfish.jpg', '1.png'),
+('10', 'asdasd', 'Male', 34, 'zsdfsdf', '', 'reva', '123', 'Seller', 'Jellyfish.jpg', '1.png'),
+('10', 'asdasd', 'Male', 34, 'zsdfsdf', '', 'reva', '123', 'Seller', 'Jellyfish.jpg', '1.png');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `scheme`
+-- 
+
+CREATE TABLE `scheme` (
+  `id` int(11) NOT NULL,
+  `ename` varchar(1000) NOT NULL,
+  `amt` varchar(1000) NOT NULL,
+  `edesc` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `scheme`
+-- 
+
+INSERT INTO `scheme` (`id`, `ename`, `amt`, `edesc`) VALUES 
+(1, 'sammba sakupadi', '15000', 'Patta,Adcard,voterid,2photo,date:1-4-2023');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_feed`
+-- 
+
+CREATE TABLE `tb_feed` (
+  `edate` varchar(1000) NOT NULL,
+  `uname` varchar(1000) NOT NULL,
+  `phone` varchar(1000) NOT NULL,
+  `feed` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- 
+-- Dumping data for table `tb_feed`
+-- 
+
+INSERT INTO `tb_feed` (`edate`, `uname`, `phone`, `feed`) VALUES 
+('13-02-2023', 'DFSDFSSF', 'SDFSDF', 'SDFSDF'),
+('13-02-2023', 'DFSDFSSF', 'SDFSDF', 'SDFSDF'),
+('13-02-2023', 'DFSDFSSF', 'SDFSDF', 'SDFSDF'),
+('13-02-2023', 'DFSDFSSF', 'SDFSDF', 'SDFSDF'),
+('13-02-2023', 'DFSDFSSF', 'SDFSDF', 'SDFSDF'),
+('13-02-2023', 'DFSDFSSF', 'SDFSDF', 'SDFSDF'),
+('13-02-2023', 'DFSDFSSF', 'SDFSDF', 'SDFSDF'),
+('13-02-2023', 'DFSDFSSF', 'SDFSDF', 'SDFSDF'),
+('13-02-2023', 'DFSDFSSF', 'SDFSDF', 'SDFSDF'),
+('13-02-2023', 'DFSDFSSF', 'SDFSDF', 'SDFSDF'),
+('13-02-2023', 'DFSDFSSF', 'SDFSDF', 'SDFSDF'),
+('13-02-2023', 'DFSDFSSF', 'SDFSDF', 'SDFSDF');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_order`
+-- 
+
+CREATE TABLE `tb_order` (
+  `proid` int(100) NOT NULL,
+  `proname` varchar(100) NOT NULL,
+  `price` varchar(100) NOT NULL,
+  `protype` varchar(100) NOT NULL,
+  `oname` varchar(100) NOT NULL,
+  `oaddress` varchar(100) NOT NULL,
+  `oph` varchar(100) NOT NULL,
+  `status` varchar(100) NOT NULL,
+  `uname` varchar(100) NOT NULL,
+  `qty` int(11) NOT NULL,
+  `odate` varchar(100) NOT NULL,
+  `tot` varchar(100) NOT NULL,
+  `id` int(11) NOT NULL auto_increment,
+  `etype` varchar(100) NOT NULL,
+  `bank` varchar(100) NOT NULL,
+  `acno` varchar(100) NOT NULL,
+  `cvv` varchar(100) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
+
+-- 
+-- Dumping data for table `tb_order`
+-- 
+
+INSERT INTO `tb_order` (`proid`, `proname`, `price`, `protype`, `oname`, `oaddress`, `oph`, `status`, `uname`, `qty`, `odate`, `tot`, `id`, `etype`, `bank`, `acno`, `cvv`) VALUES 
+(1, 'apple', '250', 'fruits', 'bav', '12,Anna Nagar,Trichy', '9856235689', 'Approved', 'ganesh', 100, '07-06-2022', '25000', 1, '', '', '', ''),
+(1, 'apple', '250', 'fruits', 'bav', 'fdsdfds', '9856235689', 'Approved', 'ganesh', 400, '07-06-2022', '100000', 2, '', '', '', ''),
+(1, 'apple', '250', 'fruits', 'bav', '12,Anna Nagar,Trichy', '9856235689', 'Approved', 'ganesh', 1000, '07-06-2022', '250000', 3, '', '', '', ''),
+(2, 'orange', '350', 'fruits', 'revathy revathy', '3rdFloor Periyasamy Towers ,Chatram Bus Stand,\r\n3rdFloor Periyasamy Towers ,Chatram Bus Stand,', '09600243569', 'pending', 'ganesh', 350, '08-02-2023', '122500', 4, '', '', '', ''),
+(2, 'orange', '350', 'fruits', 'revathy revathy', '3rdFloor Periyasamy Towers ,Chatram Bus Stand,\r\n3rdFloor Periyasamy Towers ,Chatram Bus Stand,', '09600243569', 'pending', 'ganesh', 350, '08-02-2023', '122500', 5, '', '', '', ''),
+(2, 'orange', '350', 'fruits', 'revathy revathy', '3rdFloor Periyasamy Towers ,Chatram Bus Stand,\r\n3rdFloor Periyasamy Towers ,Chatram Bus Stand,', '09600243569', 'pending', 'ganesh', 350, '08-02-2023', '122500', 6, '', '', '', ''),
+(2, 'orange', '350', 'fruits', 'revathy revathy', '3rdFloor Periyasamy Towers ,Chatram Bus Stand,\r\n3rdFloor Periyasamy Towers ,Chatram Bus Stand,', '09600243569', 'pending', 'ganesh', 350, '08-02-2023', '122500', 7, '', '', '', ''),
+(2, 'orange', '350', 'fruits', 'revathy revathy', '3rdFloor Periyasamy Towers ,Chatram Bus Stand,\r\n3rdFloor Periyasamy Towers ,Chatram Bus Stand,', '09600243569', 'pending', 'ganesh', 350, '08-02-2023', '122500', 8, '', '', '', ''),
+(2, 'orange', '350', 'fruits', 'revathy revathy', '3rdFloor Periyasamy Towers ,Chatram Bus Stand,\r\n3rdFloor Periyasamy Towers ,Chatram Bus Stand,', '09600243569', 'pending', 'ganesh', -1400, '08-02-2023', '-490000', 9, '', '', '', ''),
+(5, 'Orange', '150', 'fruits', 'karthick', '12,Anna Nagar,Srirangam,Trichy', '7845124578', 'Approved', 'ram', 100, '08-02-2023', '15000', 10, '', '', '', ''),
+(6, 'sdasdf', 'sdfsdf', 'Plants', 'sdfsdf', 'dsfdf', '8778784847', 'pending', 'reva', 0, '13-02-2023', '0', 11, 'Cash', 'Canara', '34534534534', '345'),
+(6, 'sdasdf', 'sdfsdf', 'Plants', 'sdfsdf', 'dsfdf', '8778784847', 'pending', 'reva', 0, '13-02-2023', '0', 12, 'Cash', 'Canara', '34534534534', '345'),
+(6, 'sdasdf', 'sdfsdf', 'Plants', 'sdfsdf', 'dsfdf', '8778784847', 'pending', 'reva', 0, '13-02-2023', '0', 13, 'Cash', 'Canara', '34534534534', '345'),
+(6, 'sdasdf', 'sdfsdf', 'Plants', 'sdfsdf', 'dsfdf', '8778784847', 'pending', 'reva', 0, '13-02-2023', '0', 14, 'Cash', 'Canara', '34534534534', '345'),
+(6, 'sdasdf', 'sdfsdf', 'Plants', 'sdfsdf', 'dsfdf', '8778784847', 'pending', 'reva', 0, '13-02-2023', '0', 15, 'Cash', 'Canara', '34534534534', '345'),
+(6, 'sdasdf', 'sdfsdf', 'Plants', 'sdfsdf', 'dsfdf', '8778784847', 'pending', 'reva', 0, '13-02-2023', '0', 16, 'Cash', 'Canara', '34534534534', '345'),
+(6, 'sdasdf', 'sdfsdf', 'Plants', 'sdfsdf', 'dsfdf', '8778784847', 'pending', 'reva', 0, '13-02-2023', '0', 17, 'Cash', 'Canara', '34534534534', '345'),
+(2, 'orange', '450', 'fruits', 'bav', '12,Anna Nagar,Srirangam,Trichy', '09856235689', 'pending', 'ganesh', 0, '14-02-2023', '0', 18, 'Cash', 'SBI', '454346435643564', '435');
